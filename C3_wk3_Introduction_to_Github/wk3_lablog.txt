@@ -1,0 +1,189 @@
+Using username "student-02-9f7d3fe5d700".
+Authenticating with public key "imported-openssh-key"
+Linux linux-instance 5.10.0-22-cloud-amd64 #1 SMP Debian 5.10.178-3 (2023-04-22)                                                              x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+student-02-9f7d3fe5d700@linux-instance:~$ ls -l
+total 0
+student-02-9f7d3fe5d700@linux-instance:~$ ls
+student-02-9f7d3fe5d700@linux-instance:~$ git clone https://github.com/thanesc76                                                             /CosrGoogc3w3introgithub.git dirname
+Cloning into 'dirname'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+student-02-9f7d3fe5d700@linux-instance:~$ ls
+dirname
+student-02-9f7d3fe5d700@linux-instance:~$ cd dirname
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ ls -la
+total 16
+drwxr-xr-x 3 student-02-9f7d3fe5d700 google-sudoers 4096 May 28 07:56 .
+drwxr-xr-x 3 student-02-9f7d3fe5d700 google-sudoers 4096 May 28 07:56 ..
+drwxr-xr-x 8 student-02-9f7d3fe5d700 google-sudoers 4096 May 28 07:56 .git
+-rw-r--r-- 1 student-02-9f7d3fe5d700 google-sudoers   98 May 28 07:56 README.md
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git config --global user.name “thanesc76”
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git config --global user.email “thanes@hotmail.com”
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git config -l
+user.name=“thanesc76”
+user.email=“thanes@hotmail.com”
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/thanesc76/CosrGoogc3w3introgithub.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ nano README.md
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git add README.md
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git commit
+[main 5c4a83e] I am editing the README file.
+ 1 file changed, 1 insertion(+)
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git push origin main
+Username for 'https://github.com': thanesc76
+Password for 'https://thanesc76@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-http               s-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/thanesc76/CosrGoogc3w3introgithub.git/'
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git push origin main
+Username for 'https://github.com': thanesc76
+Password for 'https://thanesc76@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/thanesc76/CosrGoogc3w3introgithub.git/'
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git push origin main
+Username for 'https://github.com': thanesc76
+Password for 'https://thanesc76@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 409 bytes | 409.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/thanesc76/CosrGoogc3w3introgithub.git
+   baed662..5c4a83e  main -> main
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ nano example.py
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git add example.py
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git commit
+[main 543bf9a] Add example.py with git_operation() function
+ 1 file changed, 4 insertions(+)
+ create mode 100644 example.py
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git push origin main
+Username for 'https://github.com': thanesc76
+Password for 'https://thanesc76@github.com':
+To https://github.com/thanesc76/CosrGoogc3w3introgithub.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/thanesc76/CosrGoogc3w3introgithub.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git log --graph --oneline
+* 543bf9a (HEAD -> main) Add example.py with git_operation() function
+* 5c4a83e (origin/main, origin/HEAD) I am editing the README file.
+* baed662 Initial commit
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git log origin/main
+commit 5c4a83e8e24ceb584a97d459834f488f47e919a2 (origin/main, origin/HEAD)
+Author: “thanesc76” <“thanes@hotmail.com”>
+Date:   Sun May 28 07:58:26 2023 +0000
+
+    I am editing the README file.
+
+commit baed66240679e61e37bdd5711161ce413c68d1de
+Author: thanesc76 <113036358+thanesc76@users.noreply.github.com>
+Date:   Sun May 28 14:23:08 2023 +0700
+
+    Initial commit
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git log origin/HEAD
+commit 5c4a83e8e24ceb584a97d459834f488f47e919a2 (origin/main, origin/HEAD)
+Author: “thanesc76” <“thanes@hotmail.com”>
+Date:   Sun May 28 07:58:26 2023 +0000
+
+    I am editing the README file.
+
+commit baed66240679e61e37bdd5711161ce413c68d1de
+Author: thanesc76 <113036358+thanesc76@users.noreply.github.com>
+Date:   Sun May 28 14:23:08 2023 +0700
+
+    Initial commit
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git log --graph --oneline --all
+* 543bf9a (HEAD -> main) Add example.py with git_operation() function
+* 5c4a83e (origin/main, origin/HEAD) I am editing the README file.
+* baed662 Initial commit
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git log
+commit 543bf9a9c5b57c66f5f8fb9e173928a9f8df2e49 (HEAD -> main)
+Author: “thanesc76” <“thanes@hotmail.com”>
+Date:   Sun May 28 08:09:50 2023 +0000
+
+    Add example.py with git_operation() function
+
+commit 5c4a83e8e24ceb584a97d459834f488f47e919a2 (origin/main, origin/HEAD)
+Author: “thanesc76” <“thanes@hotmail.com”>
+Date:   Sun May 28 07:58:26 2023 +0000
+
+    I am editing the README file.
+
+commit baed66240679e61e37bdd5711161ce413c68d1de
+Author: thanesc76 <113036358+thanesc76@users.noreply.github.com>
+Date:   Sun May 28 14:23:08 2023 +0700
+
+    Initial commit
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git pull origin main
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint:
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 651 bytes | 651.00 KiB/s, done.
+From https://github.com/thanesc76/CosrGoogc3w3introgithub
+ * branch            main       -> FETCH_HEAD
+   5c4a83e..049fc7f  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ newfile | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newfile
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git log --graph --oneline
+*   88e3aea (HEAD -> main) Merge branch 'main' of https://github.com/thanesc76/CosrGoogc3w3introgithub
+|\
+| * 049fc7f (origin/main, origin/HEAD) Create newfile
+* | 543bf9a Add example.py with git_operation() function
+|/
+* 5c4a83e I am editing the README file.
+* baed662 Initial commit
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git push origin main
+Username for 'https://github.com': thanesc76
+Password for 'https://thanesc76@github.com':
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 677 bytes | 677.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/thanesc76/CosrGoogc3w3introgithub.git
+   049fc7f..88e3aea  main -> main
+student-02-9f7d3fe5d700@linux-instance:~/dirname$ git log --graph --oneline
+*   88e3aea (HEAD -> main, origin/main, origin/HEAD) Merge branch 'main' of https://github.com/thanesc76/CosrGoogc3w3introgithub
+|\
+| * 049fc7f Create newfile
+* | 543bf9a Add example.py with git_operation() function
+|/
+* 5c4a83e I am editing the README file.
+* baed662 Initial commit
+student-02-9f7d3fe5d700@linux-instance:~/dirname$
