@@ -1,0 +1,44 @@
+Using username "student-02-87a27c915597".
+Authenticating with public key "imported-openssh-key"
+Linux linux-instance 4.9.0-15-amd64 #1 SMP Debian 4.9.258-1 (2021-03-08) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+student-02-87a27c915597@linux-instance:~$ ls -l
+total 4
+drwxr-xr-x 2 root root 4096 Jun 17 09:28 scripts
+student-02-87a27c915597@linux-instance:~$ cd ~/scripts
+student-02-87a27c915597@linux-instance:~/scripts$ ls -l
+total 4
+-rw-r--r-- 1 root root 207 Jun 17 09:28 greetings.py
+student-02-87a27c915597@linux-instance:~/scripts$ ls
+greetings.py
+student-02-87a27c915597@linux-instance:~/scripts$ cat greetings.py
+#!/usr/bin/env python3
+
+import random
+
+def greeting():
+  name = input("Hello!, What's your name?")
+  number = random.randint(1,101)
+  print("hello " + name + ", your random number is " + number)
+
+greeting()
+student-02-87a27c915597@linux-instance:~/scripts$ sudo chmod 777 greetings.py
+student-02-87a27c915597@linux-instance:~/scripts$ ./greetings.py
+Hello!, What's your name?Alex
+Traceback (most recent call last):
+  File "./greetings.py", line 10, in <module>
+    greeting()
+  File "./greetings.py", line 8, in greeting
+    print("hello " + name + ", your random number is " + number)
+TypeError: Can't convert 'int' object to str implicitly
+student-02-87a27c915597@linux-instance:~/scripts$ nano greetings.py
+student-02-87a27c915597@linux-instance:~/scripts$ ./greetings.py
+Hello!, What's your name?Alex
+hello Alex, your random number is 72
+student-02-87a27c915597@linux-instance:~/scripts$
