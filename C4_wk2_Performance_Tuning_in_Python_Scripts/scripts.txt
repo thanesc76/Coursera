@@ -1,0 +1,42 @@
+# dailysync.py
+student-02-87a27c915597@linux-instance:~/scripts$ cat dailysync.py
+#!/usr/bin/env python
+import subprocess
+src = "/data/prod/"
+dest = "/data/prod_backup/"
+subprocess.call(["rsync", "-arq", src, dest])
+
+
+# multisync.py
+student-02-87a27c915597@linux-instance:~/scripts$ cat multisync.py
+#!/usr/bin/env python3
+from multiprocessing import Pool
+def run(task):
+  # Do something with task here
+    print("Handling {}".format(task))
+if __name__ == "__main__":
+  tasks = ['task1', 'task2', 'task3']
+  # Create a pool of specific number of CPUs
+  p = Pool(len(tasks))
+  # Start each task within the pool
+  p.map(run, tasks)
+EOF
+
+
+# modify dailysync.py to be like multisync.py
+#!/usr/bin/env python3
+
+from multiprocessing import Pool
+import os  # os.walk was used
+import subprocess
+
+src = "/home/student-02-87a27c915597/data/prod"
+dirs = next(os.walk(src))[1]  # ('/home/student-02-87a27c915597/data/prod', ['alpha', 'beta', 'delta', 'omega', 'kappa', 'sigma', 'gamma'], [])
+
+def backingup(dirs):
+  dest = "/home/student-02-87a27c915597/data/prod_backup"
+  subprocess.call(["rsync", "-arq", src + '/' + dirs, dest])
+
+
+p = Pool(len(dirs))
+p.map(backingup, dirs)
