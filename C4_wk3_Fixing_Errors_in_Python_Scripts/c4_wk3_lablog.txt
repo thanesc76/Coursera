@@ -1,0 +1,267 @@
+Using username "student-02-5695577c7c61".
+Authenticating with public key "imported-openssh-key"
+Linux linux-instance 4.19.0-16-cloud-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19)                                  x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+student-02-5695577c7c61@linux-instance:~$ cd /
+student-02-5695577c7c61@linux-instance:/$ python3 /usr/bin/infrastructure
+python3: can't open file '/usr/bin/infrastructure': [Errno 2] No such file or di                                 rectory
+student-02-5695577c7c61@linux-instance:/$ ls -l
+total 60
+lrwxrwxrwx   1 root root     7 Jun  8  2021 bin -> usr/bin
+drwxr-xr-x   4 root root  4096 Jun 25 04:51 boot
+drwxr-xr-x  14 root root  2900 Jun 25 04:50 dev
+drwxr-xr-x  69 root root  4096 Jun 25 04:51 etc
+drwxr-xr-x   3 root root  4096 Jun 25 04:50 home
+lrwxrwxrwx   1 root root     7 Jun  8  2021 lib -> usr/lib
+lrwxrwxrwx   1 root root     9 Jun  8  2021 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root     9 Jun  8  2021 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root    10 Jun  8  2021 libx32 -> usr/libx32
+drwx------   2 root root 16384 Jun  8  2021 lost+found
+drwxr-xr-x   2 root root  4096 Jun  8  2021 media
+drwxr-xr-x   2 root root  4096 Jun  8  2021 mnt
+drwxr-xr-x   2 root root  4096 Jun  8  2021 opt
+dr-xr-xr-x 128 root root     0 Jun 25 04:50 proc
+drwx------   2 root root  4096 Jun  8  2021 root
+drwxr-xr-x  18 root root   620 Jun 25 04:50 run
+lrwxrwxrwx   1 root root     8 Jun  8  2021 sbin -> usr/sbin
+drwxr-xr-x   2 root root  4096 Jun  8  2021 srv
+dr-xr-xr-x  13 root root     0 Jun 25 04:50 sys
+drwxrwxrwt  11 root root  4096 Jun 25 04:51 tmp
+drwxr-xr-x  13 root root  4096 Jun  8  2021 usr
+drwxr-xr-x  13 root root  4096 Jun 25 04:50 var
+student-02-5695577c7c61@linux-instance:/$ cd ~
+student-02-5695577c7c61@linux-instance:~$ ls
+data.bak
+student-02-5695577c7c61@linux-instance:~$ cd /
+student-02-5695577c7c61@linux-instance:/$ ls
+bin   dev  home  lib32  libx32      media  opt   root  sbin  sys  usr
+boot  etc  lib   lib64  lost+found  mnt    proc  run   srv   tmp  var
+student-02-5695577c7c61@linux-instance:/$ python3 /usr/bin/infrastructure
+Traceback (most recent call last):
+  File "/usr/bin/infrastructure", line 4, in <module>
+    import matplotlib
+ModuleNotFoundError: No module named 'matplotlib'
+student-02-5695577c7c61@linux-instance:/$ sudo apt install python3-pip -y
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+python3-pip is already the newest version (18.1-5).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+student-02-5695577c7c61@linux-instance:/$ pip3 install matplotlib
+Defaulting to user installation because normal site-packages is not writeable
+Collecting matplotlib
+  Downloading matplotlib-3.5.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (11.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.2/11.2 MB 40.2 MB/s eta 0:00:00
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.38.0-py3-none-any.whl (965 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 965.4/965.4 kB 55.5 MB/s eta 0:00:00
+Collecting kiwisolver>=1.0.1 (from matplotlib)
+  Downloading kiwisolver-1.4.4-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 65.9 MB/s eta 0:00:00
+Collecting numpy>=1.17 (from matplotlib)
+  Downloading numpy-1.21.6-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 52.7 MB/s eta 0:00:00
+Collecting packaging>=20.0 (from matplotlib)
+  Downloading packaging-23.1-py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 kB 9.5 MB/s eta 0:00:00
+Requirement already satisfied: pillow>=6.2.0 in /usr/local/lib/python3.7/dist-packages (from matplotlib) (9.5.0)
+Collecting pyparsing>=2.2.1 (from matplotlib)
+  Downloading pyparsing-3.1.0-py3-none-any.whl (102 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.6/102.6 kB 18.6 MB/s eta 0:00:00
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 34.0 MB/s eta 0:00:00
+Collecting typing-extensions (from kiwisolver>=1.0.1->matplotlib)
+  Downloading typing_extensions-4.6.3-py3-none-any.whl (31 kB)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib) (1.12.0)
+Installing collected packages: typing-extensions, python-dateutil, pyparsing, packaging, numpy, fonttools, cycler, kiwisolver, matplotlib
+  WARNING: The scripts f2py, f2py3 and f2py3.7 are installed in '/home/student-02-5695577c7c61/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts fonttools, pyftmerge, pyftsubset and ttx are installed in '/home/student-02-5695577c7c61/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed cycler-0.11.0 fonttools-4.38.0 kiwisolver-1.4.4 matplotlib-3.5.3 numpy-1.21.6 packaging-23.1 pyparsing-3.1.0 python-dateutil-2.8.2 typing-extensions-4.6.3
+student-02-5695577c7c61@linux-instance:/$ python3 /usr/bin/infrastructure
+Scanning for data.csv...
+NoFileError: Could not find data.csv in the working directory
+student-02-5695577c7c61@linux-instance:/$ cd ~
+student-02-5695577c7c61@linux-instance:~$ ls
+data.bak
+student-02-5695577c7c61@linux-instance:~$ mv data.bak data.csv
+student-02-5695577c7c61@linux-instance:~$ ls
+data.csv
+student-02-5695577c7c61@linux-instance:~$ cd /
+student-02-5695577c7c61@linux-instance:/$ python3 /usr/bin/infrastructure
+MissingColumnError: Could not find column company in data.csv
+student-02-5695577c7c61@linux-instance:/$ cat ~/data.csv
+firstname,surname,,job title
+Oliver,Jefferson,Quam Vel Corporation,IT Resident
+Xenos,Snow,Tellus LLC,CTO
+Emerson,Delgado,Sagittis Ltd,CFO
+Ignatius,Henderson,Id Risus Quis Ltd, CTO
+Abel,Burnett,Dui Cum Sociis Limited,CEO
+Dustin,Daugherty,Pharetra Corp., IT Resident
+Thaddeus,Macdonald,Magna Nam Ligula LLP, CTO
+Guy,Chen,Dictum Eu LLP, IT Resident
+Ulysses,Mcgowan,Aliquam Adipiscing Lacus Incorporated, CFO
+Clinton,Ellis,Placerat Velit Limited, CTO
+Dolan,Cohen,Sed LLP, IT Resident
+Theodore,Ford,Montes Nascetur Ridiculus Limited, IT Resident
+Carson,Sykes,Non Dapibus PC, IT Resident
+Ulric,Mercer,Orci Lobortis Associates,CEO
+Jackson,Dotson,Eget Tincidunt Dui Corporation,CEO
+Elliott,Rojas,Nec Metus Facilisis PC, CFO
+Judah,Salinas,Orci Foundation, CTO
+Ryan,Potter,Dignissim Consulting,CEO
+Barry,Shannon,Augue Corporation, CFO
+Clarke,Davidson,Purus Corporation, CFO
+Rahim,Nunez,Est Company, CFO
+Orson,Watkins,A Purus Institute, CTO
+Jackson,Lambert,Vel Faucibus Foundation, CFO
+Oliver,Sims,Vivamus Nibh Consulting, CTO
+Noble,Ortiz,Sit Corporation,CEO
+Thor,Pacheco,Semper Et Inc.,CEO
+Ivan,Gilliam,Elit Fermentum Inc., IT Resident
+Aladdin,Forbes,Nulla Aliquet Incorporated, IT Resident
+Jeremy,Cooley,Mauris Vel Turpis Inc., CFO
+Cadman,Shepherd,Nunc Laoreet Lectus Ltd, CFO
+Mark,Howe,Adipiscing Elit Corp., CFO
+Coby,Alston,Sed Institute, CTO
+Valentine,Chaney,Eu Ligula Aenean Inc., CFO
+Gareth,Booth,Eu LLP, IT Resident
+Conan,Beard,Enim Consequat Purus PC, IT Resident
+Baker,Horn,Sapien Institute, CFO
+Davis,Baird,Lectus Sit Amet LLP, IT Resident
+Harrison,Manning,Donec Tincidunt Company,CEO
+Cairo,Mathis,Primis In Faucibus Corporation, CTO
+Grady,Erickson,Etiam Gravida Molestie Corporation, CFO
+Marsden,Holman,Elit Pellentesque Industries, IT Resident
+Malcolm,Lane,Lorem Ipsum Dolor Corporation, CTO
+Quamar,Nguyen,Eu Euismod Ac Corp.,CEO
+Yuli,Elliott,Elementum Incorporated, CTO
+Flynn,Fuller,Primis Consulting, CTO
+Raphael,Mcintyre,Semper LLC, IT Resident
+Ralph,West,At Augue Industries, CTO
+Baxter,Dillon,Commodo At Foundation, IT Resident
+Hector,Carpenter,Quisque Nonummy Corp., CTO
+Uriah,Austin,Vulputate Dui Nec Industries,CEO
+Benedict,Ballard,Turpis Associates, CFO
+Wang,Little,Ac PC, CFO
+Brendan,Reid,Placerat Inc., CTO
+Kyle,Gould,Fusce Aliquet Magna Consulting, IT Resident
+Giacomo,Salinas,Magna Duis Dignissim Company, IT Resident
+Wade,Bullock,Tristique Senectus LLP, IT Resident
+Abdul,Gibbs,Duis At Lacus PC, CTO
+Devin,Obrien,Neque In Ltd,CEO
+Jerome,Gibson,Eu Ligula Aenean Foundation, CFO
+Lance,Medina,Libero Proin Mi Company, CTO
+Gannon,Harrison,Vulputate Dui Foundation, CFO
+Todd,Barron,Nunc LLP, CFO
+Oleg,Banks,Vel Mauris Institute,CEO
+David,Cline,Nunc Foundation, CTO
+Todd,Vaughan,Eu Corporation,CEO
+Byron,Fry,Consectetuer Corporation, CFO
+Joseph,Sears,Dictum Corporation, CTO
+Ira,Wiggins,Eu Enim Incorporated, CTO
+Kirk,Davis,Dictum Mi Consulting,CEO
+Darius,Owens,Purus In Molestie PC, CFO
+Acton,Hooper,Ipsum Leo Elementum Limited,CEO
+Fulton,Dodson,Gravida Mauris Ut Foundation,CEO
+Tanek,Sloan,Scelerisque Sed Sapien Industries,CEO
+Calvin,Page,Etiam Ligula LLP, IT Resident
+Amal,Hinton,Urna Inc.,CEO
+Lev,Key,Eu Incorporated,CEO
+Tobias,Sandoval,Non Corp., CTO
+Erich,Lynn,Vitae Orci Corporation, IT Resident
+Zeph,Holland,Semper Nam Tempor Foundation,CEO
+Chaney,Simmons,Venenatis Lacus Etiam Foundation, CTO
+Clarke,Albert,Pellentesque A Facilisis Corporation,CEO
+Raphael,Hoffman,Lobortis Quam A Company, IT Resident
+Cain,Mckay,Varius Et Euismod Foundation,CEO
+Harper,Rivera,Nisi Inc.,CEO
+Arden,Ayala,Vel Pede Blandit Incorporated,CEO
+Cruz,Gutierrez,A Limited,CEO
+Basil,Wyatt,At Pede Cras Ltd, CFO
+Wesley,Lamb,Pulvinar Limited, CFO
+Barry,Perkins,Donec Inc.,CEO
+Zane,Deleon,Mauris Aliquam Eu Ltd, CTO
+Isaac,Maddox,Felis Nulla Industries,CEO
+Guy,Shaw,Sit Amet Faucibus PC,CEO
+Kasimir,Walters,Aliquam Associates, IT Resident
+Aaron,Burt,A Dui Limited, CFO
+Martin,Salazar,Odio Nam Company, CTO
+Brock,Lindsey,Tristique Institute,CEO
+Lee,Collier,Pede Consulting,CEO
+Grant,Morin,Donec Tempus Institute, IT Resident
+Griffin,Jones,Donec Egestas Foundation, IT Resident
+Ulric,Bradshaw,At Nisi LLC, CFO
+student-02-5695577c7c61@linux-instance:/$ ls -l
+total 60
+lrwxrwxrwx   1 root root     7 Jun  8  2021 bin -> usr/bin
+drwxr-xr-x   4 root root  4096 Jun 25 04:51 boot
+drwxr-xr-x  14 root root  2900 Jun 25 04:50 dev
+drwxr-xr-x  69 root root  4096 Jun 25 04:51 etc
+drwxr-xr-x   3 root root  4096 Jun 25 04:50 home
+lrwxrwxrwx   1 root root     7 Jun  8  2021 lib -> usr/lib
+lrwxrwxrwx   1 root root     9 Jun  8  2021 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root     9 Jun  8  2021 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root    10 Jun  8  2021 libx32 -> usr/libx32
+drwx------   2 root root 16384 Jun  8  2021 lost+found
+drwxr-xr-x   2 root root  4096 Jun  8  2021 media
+drwxr-xr-x   2 root root  4096 Jun  8  2021 mnt
+drwxr-xr-x   2 root root  4096 Jun  8  2021 opt
+dr-xr-xr-x 121 root root     0 Jun 25 04:50 proc
+drwx------   3 root root  4096 Jun 25 04:51 root
+drwxr-xr-x  18 root root   620 Jun 25 04:55 run
+lrwxrwxrwx   1 root root     8 Jun  8  2021 sbin -> usr/sbin
+drwxr-xr-x   2 root root  4096 Jun  8  2021 srv
+dr-xr-xr-x  13 root root     0 Jun 25 04:51 sys
+drwxrwxrwt   9 root root  4096 Jun 25 04:54 tmp
+drwxr-xr-x  13 root root  4096 Jun  8  2021 usr
+drwxr-xr-x  13 root root  4096 Jun 25 04:50 var
+student-02-5695577c7c61@linux-instance:/$ cd ~
+student-02-5695577c7c61@linux-instance:~$ ls -l
+total 8
+-rw-r--r-- 1 root root 4171 Jun 25 04:52 data.csv
+student-02-5695577c7c61@linux-instance:~$ sudo chmod 777 data.csv
+student-02-5695577c7c61@linux-instance:~$ ls -l
+total 8
+-rwxrwxrwx 1 root root 4171 Jun 25 04:52 data.csv
+student-02-5695577c7c61@linux-instance:~$ nano data.csv
+student-02-5695577c7c61@linux-instance:~$ cd /
+student-02-5695577c7c61@linux-instance:/$ python3 /usr/bin/infrastructure
+student-02-5695577c7c61@linux-instance:/$ ls
+bin   dev  home  lib32  libx32      media  opt   root  sbin  sys  usr
+boot  etc  lib   lib64  lost+found  mnt    proc  run   srv   tmp  var
+student-02-5695577c7c61@linux-instance:/$ ls -l
+total 60
+lrwxrwxrwx   1 root root     7 Jun  8  2021 bin -> usr/bin
+drwxr-xr-x   4 root root  4096 Jun 25 04:51 boot
+drwxr-xr-x  14 root root  2900 Jun 25 04:50 dev
+drwxr-xr-x  69 root root  4096 Jun 25 04:51 etc
+drwxr-xr-x   3 root root  4096 Jun 25 04:50 home
+lrwxrwxrwx   1 root root     7 Jun  8  2021 lib -> usr/lib
+lrwxrwxrwx   1 root root     9 Jun  8  2021 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root     9 Jun  8  2021 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root    10 Jun  8  2021 libx32 -> usr/libx32
+drwx------   2 root root 16384 Jun  8  2021 lost+found
+drwxr-xr-x   2 root root  4096 Jun  8  2021 media
+drwxr-xr-x   2 root root  4096 Jun  8  2021 mnt
+drwxr-xr-x   2 root root  4096 Jun  8  2021 opt
+dr-xr-xr-x 121 root root     0 Jun 25 04:50 proc
+drwx------   3 root root  4096 Jun 25 04:51 root
+drwxr-xr-x  18 root root   620 Jun 25 04:58 run
+lrwxrwxrwx   1 root root     8 Jun  8  2021 sbin -> usr/sbin
+drwxr-xr-x   2 root root  4096 Jun  8  2021 srv
+dr-xr-xr-x  13 root root     0 Jun 25 04:51 sys
+drwxrwxrwt   9 root root  4096 Jun 25 04:54 tmp
+drwxr-xr-x  13 root root  4096 Jun  8  2021 usr
+drwxr-xr-x  13 root root  4096 Jun 25 04:50 var
+student-02-5695577c7c61@linux-instance:/$
