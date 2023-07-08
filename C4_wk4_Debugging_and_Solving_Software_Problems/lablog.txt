@@ -1,0 +1,658 @@
+Using username "student-02-489da108d13b".
+Authenticating with public key "imported-openssh-key"
+Linux linux-instance 4.19.0-16-cloud-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19)                         x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+student-02-489da108d13b@linux-instance:~$ ls
+student-02-489da108d13b@linux-instance:~$ ls -l
+total 0
+student-02-489da108d13b@linux-instance:~$ ls -la
+total 28
+drwxr-xr-x 4 student-02-489da108d13b student-02-489da108d13b 4096 Jul  8 13:38 .
+drwxr-xr-x 3 root                    root                    4096 Jul  8 13:38 .                        .
+-rw-r--r-- 1 student-02-489da108d13b student-02-489da108d13b  220 Apr 18  2019 .                        bash_logout
+-rw-r--r-- 1 student-02-489da108d13b student-02-489da108d13b 3526 Apr 18  2019 .                        bashrc
+drwx------ 3 student-02-489da108d13b student-02-489da108d13b 4096 Jul  8 13:38 .                        gnupg
+-rw-r--r-- 1 student-02-489da108d13b student-02-489da108d13b  807 Apr 18  2019 .                        profile
+drwx------ 2 student-02-489da108d13b root                    4096 Jul  8 13:38 .                        ssh
+student-02-489da108d13b@linux-instance:~$ ls
+start_date_report.py
+student-02-489da108d13b@linux-instance:~$ ls
+start_date_report.py
+student-02-489da108d13b@linux-instance:~$ ls -la
+total 32
+drwxr-xr-x 4 student-02-489da108d13b student-02-489da108d13b 4096 Jul  8 13:39 .
+drwxr-xr-x 3 root                    root                    4096 Jul  8 13:38 .                        .
+-rw-r--r-- 1 student-02-489da108d13b student-02-489da108d13b  220 Apr 18  2019 .                        bash_logout
+-rw-r--r-- 1 student-02-489da108d13b student-02-489da108d13b 3526 Apr 18  2019 .                        bashrc
+drwx------ 3 student-02-489da108d13b student-02-489da108d13b 4096 Jul  8 13:38 .                        gnupg
+-rw-r--r-- 1 student-02-489da108d13b student-02-489da108d13b  807 Apr 18  2019 .                        profile
+drwx------ 2 student-02-489da108d13b root                    4096 Jul  8 13:38 .                        ssh
+-rw-r--r-- 1 root                    root                    2648 Jul  8 13:39 s                        tart_date_report.py
+student-02-489da108d13b@linux-instance:~$ ls -l
+total 4
+-rw-r--r-- 1 root root 2648 Jul  8 13:39 start_date_report.py
+student-02-489da108d13b@linux-instance:~$ sudo chmod 777 ~/start_date_report.py
+student-02-489da108d13b@linux-instance:~$ ./start_date_report.py
+
+Getting the first start date to query for.
+
+The date must be greater than Jan 1st, 2018
+Enter a value for the year: 2019
+Enter a value for the month: 1
+Enter a value for the day: 1
+
+Traceback (most recent call last):
+  File "./start_date_report.py", line 83, in <module>
+    main()
+  File "./start_date_report.py", line 79, in main
+    start_date = get_start_date()
+  File "./start_date_report.py", line 23, in get_start_date
+    return datetime.datetime(year, month, day)
+TypeError: an integer is required (got type str)
+student-02-489da108d13b@linux-instance:~$ nano ~/start_date_report.py
+student-02-489da108d13b@linux-instance:~$ ./start_date_report.py
+
+Getting the first start date to query for.
+
+The date must be greater than Jan 1st, 2018
+Enter a value for the year: 2019
+Enter a value for the month: 1
+Enter a value for the day: 1
+
+Started on Jan 05, 2019: ['Lucy Calhoun']
+Started on Jan 11, 2019: ['Macon Livingston']
+Started on Jan 12, 2019: ['Curran Farley']
+Started on Jan 13, 2019: ['Lucius Glass']
+Started on Jan 14, 2019: ['Michael Pickett']
+Started on Jan 15, 2019: ['Andrew Donaldson']
+Started on Jan 19, 2019: ['Richard Dillon']
+Started on Jan 21, 2019: ['Clare Saunders', 'Ainsley Knight']
+Started on Jan 26, 2019: ['Fleur Baker', 'Casey Gross']
+Started on Jan 29, 2019: ['Felix Parks']
+Started on Feb 03, 2019: ['Logan Sharp']
+Started on Feb 04, 2019: ['Eve Meyer']
+Started on Feb 05, 2019: ['Neil Warner']
+Started on Feb 11, 2019: ['Kylan Spencer']
+Started on Feb 12, 2019: ['Adara Mclaughlin']
+Started on Feb 14, 2019: ['Diana Mccall']
+Started on Feb 15, 2019: ['Knox Williamson']
+Started on Feb 17, 2019: ['Nathaniel Puckett']
+Started on Feb 18, 2019: ['Keane Greer']
+Started on Feb 20, 2019: ['May Oliver']
+Started on Feb 21, 2019: ['Dana Harrington']
+Started on Feb 23, 2019: ['Gavin Garrett']
+Started on Feb 25, 2019: ['Lucy Wade']
+Started on Feb 27, 2019: ['Malachi Mccullough']
+Started on Feb 28, 2019: ['Phyllis Miller']
+Started on Mar 03, 2019: ['Martin Dalton']
+Started on Mar 04, 2019: ['Gage Vega']
+Started on Mar 05, 2019: ['Benjamin Blake']
+Started on Mar 06, 2019: ['Xerxes James']
+Started on Mar 11, 2019: ['Anne Giles']
+Started on Mar 15, 2019: ['Fay Schroeder']
+Started on Mar 17, 2019: ['Keaton Edwards']
+Started on Mar 18, 2019: ['Sheila Richards']
+Started on Mar 22, 2019: ['Jelani Fernandez']
+Started on Mar 27, 2019: ['Walker Cline']
+Started on Mar 29, 2019: ['Eleanor Dorsey']
+Started on Mar 30, 2019: ['Kelly Dillon', 'Denise Wilkins']
+Started on Apr 05, 2019: ['Lucas Fuentes']
+Started on Apr 07, 2019: ['Taylor Butler']
+Started on Apr 09, 2019: ['Raven Benton']
+Started on Apr 10, 2019: ['Dana Miles']
+Started on Apr 13, 2019: ['Hayden Pollard']
+Started on Apr 15, 2019: ['Rogan Miranda']
+Started on Apr 18, 2019: ['Jessamine Myers']
+Started on Apr 24, 2019: ['Scott Nelson']
+Started on Apr 26, 2019: ['Kylan Mccormick']
+Started on Apr 30, 2019: ['Darryl Levy']
+Started on May 01, 2019: ['Chancellor Kline', 'Stewart Todd']
+Started on May 02, 2019: ['Jenna Odom']
+Started on May 04, 2019: ['Devin Foley']
+Started on May 06, 2019: ['Rudyard Williamson', 'Paul Spears', 'Vaughan English'                        ]
+Started on May 07, 2019: ['Ryder Adams']
+Started on May 10, 2019: ['Chase Chandler']
+Started on May 14, 2019: ['Lionel Wells']
+Started on May 20, 2019: ['Nathan Mays']
+Started on May 23, 2019: ['Nell Ewing', 'Lydia Mills']
+Started on May 24, 2019: ['Honorato Solomon']
+Started on May 26, 2019: ['Audra Cobb', 'Neville Ball']
+Started on May 28, 2019: ['Otto Bird', 'Venus Love']
+Started on May 29, 2019: ['David Lamb']
+Started on Jun 01, 2019: ['Allistair Mcdaniel']
+Started on Jun 02, 2019: ['Belle Lane', 'Wyoming Pacheco']
+Started on Jun 03, 2019: ['Audra Horn']
+Started on Jun 06, 2019: ['Kennedy Harrington']
+Started on Jun 08, 2019: ['Adrienne Higgins', 'Miranda Vasquez']
+Started on Jun 19, 2019: ['Keane Randall']
+Started on Jun 27, 2019: ['Hu Simpson']
+Started on Jul 01, 2019: ['Eric Giles']
+Started on Jul 04, 2019: ['Harding Mcmillan']
+Started on Jul 05, 2019: ['Linus Perry']
+Started on Jul 08, 2019: ['Fritz Tanner', 'Haviva Morrow']
+Started on Jul 09, 2019: ['Hayden Puckett', 'Desirae Cash', 'Eleanor Hood']
+Started on Jul 14, 2019: ['Thaddeus Hughes']
+Started on Jul 19, 2019: ['Darrel Mccray']
+Started on Jul 20, 2019: ['Baxter Combs']
+Started on Jul 22, 2019: ['Brenda Barton']
+Started on Jul 26, 2019: ['Morgan Massey']
+Started on Jul 30, 2019: ['Wesley Weaver', 'Teagan Dodson']
+Started on Aug 01, 2019: ['Hoyt Kramer']
+Started on Aug 02, 2019: ['Madonna Perkins']
+Started on Aug 04, 2019: ['Orlando Stanley']
+Started on Aug 05, 2019: ['Xaviera Carlson']
+Started on Aug 06, 2019: ['Xaviera Spence', 'Serena Hodge']
+Started on Aug 13, 2019: ['Constance Rocha']
+Started on Aug 15, 2019: ['Isabelle Jefferson']
+Started on Aug 19, 2019: ['Linda Figueroa', 'Rosalyn Bullock']
+Started on Aug 20, 2019: ['Carson Finley']
+Started on Aug 23, 2019: ['Malcolm Harvey', 'Aladdin Knight']
+Started on Aug 24, 2019: ['Zeus Kirk', 'Amelia Bowen', 'Ella Sloan']
+Started on Aug 25, 2019: ['Brendan Pugh']
+Started on Aug 28, 2019: ['Alexander Dillard']
+Started on Aug 31, 2019: ['Quintessa Ramsey']
+Started on Sep 01, 2019: ['Georgia Larson']
+Started on Sep 02, 2019: ['Adrienne Dalton']
+Started on Sep 06, 2019: ['Cherokee Dillard', 'Fatima Robinson']
+Started on Sep 08, 2019: ['Ruby Travis']
+Started on Sep 11, 2019: ['Maile Hughes']
+Started on Sep 13, 2019: ['Benedict Mathis']
+Started on Sep 17, 2019: ['Eric Blackburn']
+Started on Sep 19, 2019: ['Nigel Oneill', 'Elvis Davidson']
+Started on Sep 26, 2019: ['Jason Meyer']
+Started on Sep 28, 2019: ['Roanna Barry']
+Started on Sep 29, 2019: ['Justina Hogan']
+Started on Oct 01, 2019: ['Aurelia Campbell', 'Anjolie Powell']
+Started on Oct 02, 2019: ['Marsden Oneill']
+Started on Oct 03, 2019: ['Candice Malone']
+Started on Oct 04, 2019: ['Quamar Stewart']
+Started on Oct 06, 2019: ['Darius Goodman']
+Started on Oct 15, 2019: ['Idola Warren']
+Started on Oct 16, 2019: ['Hu Hyde', 'Lesley Fuentes']
+Started on Oct 17, 2019: ['Justin Dalton']
+Started on Oct 18, 2019: ['Mary Molina']
+Started on Oct 22, 2019: ['Carol Weiss']
+Started on Oct 31, 2019: ['Evangeline Cooley', 'Hayes Whitley']
+Started on Nov 07, 2019: ['Ciaran Chavez']
+Started on Nov 11, 2019: ['Britanni Burgess']
+Started on Nov 16, 2019: ['Fatima Kerr']
+Started on Nov 19, 2019: ['Yetta Thomas']
+Started on Nov 20, 2019: ['Slade Roman']
+Started on Nov 22, 2019: ['Macy Walls']
+Started on Nov 24, 2019: ['Cally Gilmore']
+Started on Nov 26, 2019: ['MacKenzie Murphy']
+Started on Nov 27, 2019: ['Kiara Farrell']
+Started on Dec 01, 2019: ['Lilah Hanson']
+Started on Dec 04, 2019: ['Micah Bentley']
+Started on Dec 09, 2019: ['Cade Grant']
+Started on Dec 11, 2019: ['Megan Reed']
+Started on Dec 13, 2019: ['Ulla Fulton', 'Karyn Roy']
+Started on Dec 15, 2019: ['Shellie Poole', 'Emi William']
+Started on Dec 19, 2019: ['George William']
+Started on Dec 20, 2019: ['Wynne Anthony']
+Started on Dec 27, 2019: ['Phelan Fields']
+Started on Dec 31, 2019: ['Deacon Blevins']
+Started on Jan 02, 2020: ['Yoshi Molina']
+Started on Jan 04, 2020: ['Tasha Hodge']
+Started on Jan 05, 2020: ['Margaret Hooper', 'Ruby Richard']
+Started on Jan 08, 2020: ['Lyle Schultz']
+Started on Jan 09, 2020: ['Roth Foster']
+Started on Jan 13, 2020: ['Tanek Burton', 'Kyla Gay', 'Leigh Willis']
+Started on Jan 14, 2020: ['Brynn Miles', 'Lane Newman']
+Started on Jan 16, 2020: ['Rose Compton']
+Started on Jan 19, 2020: ['Connor Grimes']
+Started on Jan 20, 2020: ['Hedwig Cain']
+Started on Jan 23, 2020: ['Hillary Vega']
+Started on Jan 24, 2020: ['Olivia Frederick', 'Xandra Gonzalez']
+Started on Jan 25, 2020: ['Jesse Wade']
+Started on Jan 26, 2020: ['Thane Rich']
+Started on Jan 28, 2020: ['Keefe Logan']
+Started on Feb 05, 2020: ['Colin Maddox']
+Started on Feb 06, 2020: ['Ivan Dillard']
+Started on Feb 09, 2020: ['Desirae Gaines']
+Started on Feb 11, 2020: ['Ivory Mccullough']
+Started on Feb 15, 2020: ['Iona Mckee']
+Started on Feb 17, 2020: ['Lee Jacobs']
+Started on Feb 26, 2020: ['Giacomo Duffy']
+Started on Feb 29, 2020: ['Stewart Simmons']
+Started on Mar 04, 2020: ['Janna Green']
+Started on Mar 05, 2020: ['Tobias Mcleod']
+Started on Mar 07, 2020: ['Laith Moreno']
+Started on Mar 09, 2020: ['Kane Rosa', 'Mannix Estes', 'Josiah Morrow', 'Rhianno                        n Dodson']
+Started on Mar 10, 2020: ['TaShya Pruitt', 'Zeph English']
+Started on Mar 12, 2020: ['Gretchen Holden', 'Drake English']
+Started on Mar 13, 2020: ['Aidan Schroeder', 'Amaya Mercado']
+Started on Mar 15, 2020: ['Amela Grant']
+Started on Mar 24, 2020: ['Fiona Montoya', 'Kay Pratt']
+Started on Mar 27, 2020: ['Tate Chang']
+Started on Apr 04, 2020: ['Linus Cantrell']
+Started on Apr 13, 2020: ['Garrison Keith']
+Started on Apr 14, 2020: ['Giselle Chavez']
+Started on Apr 18, 2020: ['Jermaine Newman']
+Started on Apr 22, 2020: ['Halla Cantu', 'Vera Carver']
+Started on Apr 23, 2020: ['Kaden Moon']
+Started on Apr 24, 2020: ['Giselle Dillon']
+Started on Apr 26, 2020: ['Bradley Chandler']
+Started on Apr 29, 2020: ['Jennifer Murphy']
+Started on May 03, 2020: ['Jack Franco']
+Started on May 07, 2020: ['Oleg Noble']
+Started on May 10, 2020: ['Lavinia Whitfield']
+Started on May 13, 2020: ['Kalia Perez', 'Rafael Vaughan']
+Started on May 16, 2020: ['Raymond Pate']
+Started on May 17, 2020: ['Bruno Wallace']
+Started on May 19, 2020: ['Aurora Macias']
+Started on May 22, 2020: ['Gemma Booker']
+Started on May 28, 2020: ['Blake Franco']
+Started on Jun 02, 2020: ['Kyle Roach']
+Started on Jun 04, 2020: ['Tanek Edwards']
+Started on Jun 06, 2020: ['Liberty Pena']
+Started on Jun 10, 2020: ['Kyra Vance']
+Started on Jun 11, 2020: ['Kiona Nguyen']
+Started on Jun 13, 2020: ['Aurora Sanford']
+Started on Jun 20, 2020: ['Jarrod Nicholson']
+Started on Jun 24, 2020: ['Nicholas Brock']
+Started on Jun 25, 2020: ['Quynn Parsons', 'Katell Gill']
+Started on Jun 27, 2020: ['Melanie David', 'Jordan Golden']
+Started on Jun 28, 2020: ['Xyla Ferrell']
+Started on Jun 29, 2020: ['Kelsey Adkins']
+Started on Jun 30, 2020: ['Grant Daugherty']
+Started on Jul 08, 2023: []
+student-02-489da108d13b@linux-instance:~$ cat ~/start_date_report.py
+#!/usr/bin/env python3
+
+
+import csv
+import datetime
+import requests
+
+
+FILE_URL = "https://storage.googleapis.com/gwg-content/gic215/employees-with-dat                        e.csv"
+
+def get_start_date():
+    """Interactively get the start date to query for."""
+
+    print()
+    print('Getting the first start date to query for.')
+    print()
+    print('The date must be greater than Jan 1st, 2018')
+    year = int(input('Enter a value for the year: '))
+    month = int(input('Enter a value for the month: '))
+    day = int(input('Enter a value for the day: '))
+    print()
+
+    return datetime.datetime(year, month, day)
+
+def get_file_lines(url):
+    """Returns the lines contained in the file at the given URL"""
+
+    # Download the file over the internet
+    response = requests.get(url, stream=True)
+    lines = []
+
+    for line in response.iter_lines():
+        lines.append(line.decode("UTF-8"))
+    return lines
+
+def get_same_or_newer(start_date):
+    """Returns the employees that started on the given date, or the closest one.                        """
+    data = get_file_lines(FILE_URL)
+    reader = csv.reader(data[1:])
+
+    # We want all employees that started at the same date or the closest newer
+    # date. To calculate that, we go through all the data and find the
+    # employees that started on the smallest date that's equal or bigger than
+    # the given start date.
+    min_date = datetime.datetime.today()
+    min_date_employees = []
+    for row in reader:
+        row_date = datetime.datetime.strptime(row[3], '%Y-%m-%d')
+
+        # If this date is smaller than the one we're looking for,
+        # we skip this row
+        if row_date < start_date:
+            continue
+
+        # If this date is smaller than the current minimum,
+        # we pick it as the new minimum, resetting the list of
+        # employees at the minimal date.
+        if row_date < min_date:
+            min_date = row_date
+            min_date_employees = []
+
+        # If this date is the same as the current minimum,
+        # we add the employee in this row to the list of
+        # employees at the minimal date.
+        if row_date == min_date:
+            min_date_employees.append("{} {}".format(row[0], row[1]))
+
+    return min_date, min_date_employees
+
+def list_newer(start_date):
+    while start_date < datetime.datetime.today():
+        start_date, employees = get_same_or_newer(start_date)
+        print("Started on {}: {}".format(start_date.strftime("%b %d, %Y"), emplo                        yees))
+
+        # Now move the date to the next one
+        start_date = start_date + datetime.timedelta(days=1)
+
+def main():
+    start_date = get_start_date()
+    list_newer(start_date)
+
+if __name__ == "__main__":
+    main()
+student-02-489da108d13b@linux-instance:~$ nano ~/start_date_report.py
+student-02-489da108d13b@linux-instance:~$ ./start_date_report.py
+
+Getting the first start date to query for.
+
+The date must be greater than Jan 1st, 2018
+Enter a value for the year: 2019
+Enter a value for the month: 1
+Enter a value for the day: 1
+
+Started on Jan 05, 2019: ['Lucy Calhoun']
+Started on Jan 11, 2019: ['Macon Livingston']
+Started on Jan 12, 2019: ['Curran Farley']
+Started on Jan 13, 2019: ['Lucius Glass']
+Started on Jan 14, 2019: ['Michael Pickett']
+Started on Jan 15, 2019: ['Andrew Donaldson']
+Started on Jan 19, 2019: ['Richard Dillon']
+Started on Jan 21, 2019: ['Clare Saunders', 'Ainsley Knight']
+Started on Jan 26, 2019: ['Fleur Baker', 'Casey Gross']
+Started on Jan 29, 2019: ['Felix Parks']
+Started on Feb 03, 2019: ['Logan Sharp']
+Started on Feb 04, 2019: ['Eve Meyer']
+Started on Feb 05, 2019: ['Neil Warner']
+Started on Feb 11, 2019: ['Kylan Spencer']
+Started on Feb 12, 2019: ['Adara Mclaughlin']
+Started on Feb 14, 2019: ['Diana Mccall']
+Started on Feb 15, 2019: ['Knox Williamson']
+Started on Feb 17, 2019: ['Nathaniel Puckett']
+Started on Feb 18, 2019: ['Keane Greer']
+Started on Feb 20, 2019: ['May Oliver']
+Started on Feb 21, 2019: ['Dana Harrington']
+Started on Feb 23, 2019: ['Gavin Garrett']
+Started on Feb 25, 2019: ['Lucy Wade']
+Started on Feb 27, 2019: ['Malachi Mccullough']
+Started on Feb 28, 2019: ['Phyllis Miller']
+Started on Mar 03, 2019: ['Martin Dalton']
+Started on Mar 04, 2019: ['Gage Vega']
+Started on Mar 05, 2019: ['Benjamin Blake']
+Started on Mar 06, 2019: ['Xerxes James']
+Started on Mar 11, 2019: ['Anne Giles']
+Started on Mar 15, 2019: ['Fay Schroeder']
+Started on Mar 17, 2019: ['Keaton Edwards']
+Started on Mar 18, 2019: ['Sheila Richards']
+Started on Mar 22, 2019: ['Jelani Fernandez']
+Started on Mar 27, 2019: ['Walker Cline']
+Started on Mar 29, 2019: ['Eleanor Dorsey']
+Started on Mar 30, 2019: ['Kelly Dillon', 'Denise Wilkins']
+Started on Apr 05, 2019: ['Lucas Fuentes']
+Started on Apr 07, 2019: ['Taylor Butler']
+Started on Apr 09, 2019: ['Raven Benton']
+Started on Apr 10, 2019: ['Dana Miles']
+Started on Apr 13, 2019: ['Hayden Pollard']
+Started on Apr 15, 2019: ['Rogan Miranda']
+Started on Apr 18, 2019: ['Jessamine Myers']
+Started on Apr 24, 2019: ['Scott Nelson']
+Started on Apr 26, 2019: ['Kylan Mccormick']
+Started on Apr 30, 2019: ['Darryl Levy']
+Started on May 01, 2019: ['Chancellor Kline', 'Stewart Todd']
+Started on May 02, 2019: ['Jenna Odom']
+Started on May 04, 2019: ['Devin Foley']
+Started on May 06, 2019: ['Rudyard Williamson', 'Paul Spears', 'Vaughan English']
+Started on May 07, 2019: ['Ryder Adams']
+Started on May 10, 2019: ['Chase Chandler']
+Started on May 14, 2019: ['Lionel Wells']
+Started on May 20, 2019: ['Nathan Mays']
+Started on May 23, 2019: ['Nell Ewing', 'Lydia Mills']
+Started on May 24, 2019: ['Honorato Solomon']
+Started on May 26, 2019: ['Audra Cobb', 'Neville Ball']
+Started on May 28, 2019: ['Otto Bird', 'Venus Love']
+Started on May 29, 2019: ['David Lamb']
+Started on Jun 01, 2019: ['Allistair Mcdaniel']
+Started on Jun 02, 2019: ['Belle Lane', 'Wyoming Pacheco']
+Started on Jun 03, 2019: ['Audra Horn']
+Started on Jun 06, 2019: ['Kennedy Harrington']
+Started on Jun 08, 2019: ['Adrienne Higgins', 'Miranda Vasquez']
+Started on Jun 19, 2019: ['Keane Randall']
+Started on Jun 27, 2019: ['Hu Simpson']
+Started on Jul 01, 2019: ['Eric Giles']
+Started on Jul 04, 2019: ['Harding Mcmillan']
+Started on Jul 05, 2019: ['Linus Perry']
+Started on Jul 08, 2019: ['Fritz Tanner', 'Haviva Morrow']
+Started on Jul 09, 2019: ['Hayden Puckett', 'Desirae Cash', 'Eleanor Hood']
+Started on Jul 14, 2019: ['Thaddeus Hughes']
+Started on Jul 19, 2019: ['Darrel Mccray']
+Started on Jul 20, 2019: ['Baxter Combs']
+Started on Jul 22, 2019: ['Brenda Barton']
+Started on Jul 26, 2019: ['Morgan Massey']
+Started on Jul 30, 2019: ['Wesley Weaver', 'Teagan Dodson']
+Started on Aug 01, 2019: ['Hoyt Kramer']
+Started on Aug 02, 2019: ['Madonna Perkins']
+Started on Aug 04, 2019: ['Orlando Stanley']
+Started on Aug 05, 2019: ['Xaviera Carlson']
+Started on Aug 06, 2019: ['Xaviera Spence', 'Serena Hodge']
+Started on Aug 13, 2019: ['Constance Rocha']
+Started on Aug 15, 2019: ['Isabelle Jefferson']
+Started on Aug 19, 2019: ['Linda Figueroa', 'Rosalyn Bullock']
+Started on Aug 20, 2019: ['Carson Finley']
+Started on Aug 23, 2019: ['Malcolm Harvey', 'Aladdin Knight']
+Started on Aug 24, 2019: ['Zeus Kirk', 'Amelia Bowen', 'Ella Sloan']
+Started on Aug 25, 2019: ['Brendan Pugh']
+Started on Aug 28, 2019: ['Alexander Dillard']
+Started on Aug 31, 2019: ['Quintessa Ramsey']
+Started on Sep 01, 2019: ['Georgia Larson']
+Started on Sep 02, 2019: ['Adrienne Dalton']
+Started on Sep 06, 2019: ['Cherokee Dillard', 'Fatima Robinson']
+Started on Sep 08, 2019: ['Ruby Travis']
+Started on Sep 11, 2019: ['Maile Hughes']
+Started on Sep 13, 2019: ['Benedict Mathis']
+Started on Sep 17, 2019: ['Eric Blackburn']
+Started on Sep 19, 2019: ['Nigel Oneill', 'Elvis Davidson']
+Started on Sep 26, 2019: ['Jason Meyer']
+Started on Sep 28, 2019: ['Roanna Barry']
+Started on Sep 29, 2019: ['Justina Hogan']
+Started on Oct 01, 2019: ['Aurelia Campbell', 'Anjolie Powell']
+Started on Oct 02, 2019: ['Marsden Oneill']
+Started on Oct 03, 2019: ['Candice Malone']
+Started on Oct 04, 2019: ['Quamar Stewart']
+Started on Oct 06, 2019: ['Darius Goodman']
+Started on Oct 15, 2019: ['Idola Warren']
+Started on Oct 16, 2019: ['Hu Hyde', 'Lesley Fuentes']
+Started on Oct 17, 2019: ['Justin Dalton']
+Started on Oct 18, 2019: ['Mary Molina']
+Started on Oct 22, 2019: ['Carol Weiss']
+Started on Oct 31, 2019: ['Evangeline Cooley', 'Hayes Whitley']
+Started on Nov 07, 2019: ['Ciaran Chavez']
+Started on Nov 11, 2019: ['Britanni Burgess']
+Started on Nov 16, 2019: ['Fatima Kerr']
+Started on Nov 19, 2019: ['Yetta Thomas']
+Started on Nov 20, 2019: ['Slade Roman']
+Started on Nov 22, 2019: ['Macy Walls']
+Started on Nov 24, 2019: ['Cally Gilmore']
+Started on Nov 26, 2019: ['MacKenzie Murphy']
+Started on Nov 27, 2019: ['Kiara Farrell']
+Started on Dec 01, 2019: ['Lilah Hanson']
+Started on Dec 04, 2019: ['Micah Bentley']
+Started on Dec 09, 2019: ['Cade Grant']
+Started on Dec 11, 2019: ['Megan Reed']
+Started on Dec 13, 2019: ['Ulla Fulton', 'Karyn Roy']
+Started on Dec 15, 2019: ['Shellie Poole', 'Emi William']
+Started on Dec 19, 2019: ['George William']
+Started on Dec 20, 2019: ['Wynne Anthony']
+Started on Dec 27, 2019: ['Phelan Fields']
+Started on Dec 31, 2019: ['Deacon Blevins']
+Started on Jan 02, 2020: ['Yoshi Molina']
+Started on Jan 04, 2020: ['Tasha Hodge']
+Started on Jan 05, 2020: ['Margaret Hooper', 'Ruby Richard']
+Started on Jan 08, 2020: ['Lyle Schultz']
+Started on Jan 09, 2020: ['Roth Foster']
+Started on Jan 13, 2020: ['Tanek Burton', 'Kyla Gay', 'Leigh Willis']
+Started on Jan 14, 2020: ['Brynn Miles', 'Lane Newman']
+Started on Jan 16, 2020: ['Rose Compton']
+Started on Jan 19, 2020: ['Connor Grimes']
+Started on Jan 20, 2020: ['Hedwig Cain']
+Started on Jan 23, 2020: ['Hillary Vega']
+Started on Jan 24, 2020: ['Olivia Frederick', 'Xandra Gonzalez']
+Started on Jan 25, 2020: ['Jesse Wade']
+Started on Jan 26, 2020: ['Thane Rich']
+Started on Jan 28, 2020: ['Keefe Logan']
+Started on Feb 05, 2020: ['Colin Maddox']
+Started on Feb 06, 2020: ['Ivan Dillard']
+Started on Feb 09, 2020: ['Desirae Gaines']
+Started on Feb 11, 2020: ['Ivory Mccullough']
+Started on Feb 15, 2020: ['Iona Mckee']
+Started on Feb 17, 2020: ['Lee Jacobs']
+Started on Feb 26, 2020: ['Giacomo Duffy']
+Started on Feb 29, 2020: ['Stewart Simmons']
+Started on Mar 04, 2020: ['Janna Green']
+Started on Mar 05, 2020: ['Tobias Mcleod']
+Started on Mar 07, 2020: ['Laith Moreno']
+Started on Mar 09, 2020: ['Kane Rosa', 'Mannix Estes', 'Josiah Morrow', 'Rhiannon Dodson']
+Started on Mar 10, 2020: ['TaShya Pruitt', 'Zeph English']
+Started on Mar 12, 2020: ['Gretchen Holden', 'Drake English']
+Started on Mar 13, 2020: ['Aidan Schroeder', 'Amaya Mercado']
+Started on Mar 15, 2020: ['Amela Grant']
+Started on Mar 24, 2020: ['Fiona Montoya', 'Kay Pratt']
+Started on Mar 27, 2020: ['Tate Chang']
+Started on Apr 04, 2020: ['Linus Cantrell']
+Started on Apr 13, 2020: ['Garrison Keith']
+Started on Apr 14, 2020: ['Giselle Chavez']
+Started on Apr 18, 2020: ['Jermaine Newman']
+Started on Apr 22, 2020: ['Halla Cantu', 'Vera Carver']
+Started on Apr 23, 2020: ['Kaden Moon']
+Started on Apr 24, 2020: ['Giselle Dillon']
+Started on Apr 26, 2020: ['Bradley Chandler']
+Started on Apr 29, 2020: ['Jennifer Murphy']
+Started on May 03, 2020: ['Jack Franco']
+Started on May 07, 2020: ['Oleg Noble']
+Started on May 10, 2020: ['Lavinia Whitfield']
+Started on May 13, 2020: ['Kalia Perez', 'Rafael Vaughan']
+Started on May 16, 2020: ['Raymond Pate']
+Started on May 17, 2020: ['Bruno Wallace']
+Started on May 19, 2020: ['Aurora Macias']
+Started on May 22, 2020: ['Gemma Booker']
+Started on May 28, 2020: ['Blake Franco']
+Started on Jun 02, 2020: ['Kyle Roach']
+Started on Jun 04, 2020: ['Tanek Edwards']
+Started on Jun 06, 2020: ['Liberty Pena']
+Started on Jun 10, 2020: ['Kyra Vance']
+Started on Jun 11, 2020: ['Kiona Nguyen']
+Started on Jun 13, 2020: ['Aurora Sanford']
+Started on Jun 20, 2020: ['Jarrod Nicholson']
+Started on Jun 24, 2020: ['Nicholas Brock']
+Started on Jun 25, 2020: ['Quynn Parsons', 'Katell Gill']
+Started on Jun 27, 2020: ['Melanie David', 'Jordan Golden']
+Started on Jun 28, 2020: ['Xyla Ferrell']
+Started on Jun 29, 2020: ['Kelsey Adkins']
+Started on Jun 30, 2020: ['Grant Daugherty']
+student-02-489da108d13b@linux-instance:~$ cat ~/start_date_report.py
+#!/usr/bin/env python3
+
+
+import csv
+import datetime
+import requests
+
+
+FILE_URL = "https://storage.googleapis.com/gwg-content/gic215/employees-with-date.csv"
+
+def get_start_date():
+    """Interactively get the start date to query for."""
+
+    print()
+    print('Getting the first start date to query for.')
+    print()
+    print('The date must be greater than Jan 1st, 2018')
+    year = int(input('Enter a value for the year: '))
+    month = int(input('Enter a value for the month: '))
+    day = int(input('Enter a value for the day: '))
+    print()
+
+    return datetime.datetime(year, month, day)
+
+def get_file_lines(url):
+    """Returns the lines contained in the file at the given URL"""
+
+    # Download the file over the internet
+    response = requests.get(url, stream=True)
+    lines = []
+
+    for line in response.iter_lines():
+        lines.append(line.decode("UTF-8"))
+    return lines
+
+def get_same_or_newer(start_date):
+    """Returns the employees that started on the given date, or the closest one."""
+    data = get_file_lines(FILE_URL)
+    reader = csv.reader(data[1:])
+
+    # We want all employees that started at the same date or the closest newer
+    # date. To calculate that, we go through all the data and find the
+    # employees that started on the smallest date that's equal or bigger than
+    # the given start date.
+    min_date = datetime.datetime.today()
+    min_date_employees = []
+    for row in reader:
+        row_date = datetime.datetime.strptime(row[3], '%Y-%m-%d')
+
+        # If this date is smaller than the one we're looking for,
+        # we skip this row
+        if row_date < start_date:
+            continue
+
+        # If this date is smaller than the current minimum,
+        # we pick it as the new minimum, resetting the list of
+        # employees at the minimal date.
+        if row_date < min_date:
+            min_date = row_date
+            min_date_employees = []
+
+        # If this date is the same as the current minimum,
+        # we add the employee in this row to the list of
+        # employees at the minimal date.
+        if row_date == min_date:
+            min_date_employees.append("{} {}".format(row[0], row[1]))
+
+    return min_date, min_date_employees
+
+def list_newer(start_date):
+    data = get_file_lines(FILE_URL)
+    reader = csv.reader(data[1:])
+    ldate = {}
+    for line in reader:
+      lname = line[0] +' '+ line[1]
+      line3date = datetime.datetime.strptime(line[3],'%Y-%m-%d')
+      if line3date not in ldate:
+        ldate[line3date] = []
+        ldate[line3date].append(lname)
+      else:
+        ldate[line3date].append(lname)
+
+
+
+    while start_date < datetime.datetime.today():
+        #start_date, employees = get_same_or_newer(start_date)
+        #print("Started on {}: {}".format(start_date.strftime("%b %d, %Y"), employees))
+
+        if start_date in ldate:
+          print("Started on {}: {}".format(start_date.strftime("%b %d, %Y"), ldate[start_date]))
+
+        # Now move the date to the next one
+        start_date = start_date + datetime.timedelta(days=1)
+
+def main():
+    start_date = get_start_date()
+    list_newer(start_date)
+
+if __name__ == "__main__":
+    main()
+student-02-489da108d13b@linux-instance:~$
